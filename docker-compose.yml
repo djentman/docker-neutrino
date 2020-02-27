@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ubuntu:
+    container_name: neutrino_ubuntu
+    build:
+      context: ./docker/ubuntu
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/root/
+    tty: true
